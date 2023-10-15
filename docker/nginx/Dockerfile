@@ -25,3 +25,4 @@ RUN apt-get update && apt-get install -y vim \
 # # Configure PHP-FPM
 # COPY docker/config/php.ini /etc/php7/custom.ini
 # COPY docker/config/fpm-pool.conf /etc/php7/php-fpm.d/www.conf
+WORKDIR /usr/share/nginx/html
